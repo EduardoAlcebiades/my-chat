@@ -1,0 +1,58 @@
+header {
+  padding: 1rem 2rem;
+
+  background: #0ccaca;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 2rem;
+
+  height: 100%;
+  width: 100%;
+
+  background: #f0f0f7;
+}
+
+main .card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+
+  background: white;
+
+  border-radius: 0.2rem;
+  box-shadow: 0 0 8px #00000025;
+}
+
+main .card h1,
+main .card h2,
+main .card h3,
+main .card h4,
+main .card h5,
+main .card h6 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .card form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+
+  margin-top: 2rem;
+}
+
+main .card form button {
+  margin-top: 0.5rem;
+}

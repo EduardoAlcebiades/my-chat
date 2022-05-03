@@ -1,0 +1,132 @@
+header {
+  display: flex;
+  align-items: center;
+
+  height: 4rem;
+
+  padding: 0 2rem;
+
+  background: #1d1d24;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+
+  max-height: calc(100% - 4rem);
+}
+
+main ul.participants_list {
+  display: flex;
+  flex-direction: column;
+
+  width: 20rem;
+  max-height: 100%;
+
+  padding: 1rem 1.5rem;
+
+  background: #1d1d24;
+  list-style: none;
+
+  overflow-y: auto;
+}
+
+main ul li.participant_item {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid #d9dbdf52;
+  border-radius: 0.2rem;
+
+  color: #d9dbdf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+main ul li.participant_item + .participant_item {
+  margin-top: 1rem;
+}
+
+main ul li.participant_item.its_me span {
+  color: #0ecdb2;
+}
+
+main ul li.participant_item i {
+  font-size: 28pt;
+}
+
+main .chat {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 0;
+
+  background: #2e2e3a;
+}
+
+main .chat input {
+  padding: 1rem;
+  margin: 1.5rem 2rem 0;
+
+  outline: 0;
+  background: #1d1d2483;
+  color: white;
+  font-size: 12pt;
+}
+
+main .chat .message_list {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 1.5rem;
+  margin-right: 0.5rem;
+
+  overflow-y: auto;
+}
+
+main .chat .message_list .message_item {
+  align-self: flex-start;
+
+  padding: 0.5rem 0.8rem;
+
+  background: #59669956;
+  border-radius: 0.4rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .chat .message_list .message_item + .message_item {
+  margin-top: 0.3rem;
+}
+
+main .chat .message_list .message_item:not(.myself) + .message_item.myself,
+main .chat .message_list .message_item.myself + .message_item:not(.myself) {
+  margin-top: 1.5rem;
+}
+
+main .chat .message_list .message_item.myself {
+  align-self: flex-end;
+}
+
+main .chat .message_list .message_item strong {
+  font-size: 0.9rem;
+  color: #669beb;
+}
+
+main .chat .message_list .message_item p {
+  margin-top: 0.3rem;
+  color: #d9dbdf;
+}
